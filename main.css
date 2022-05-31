@@ -20,14 +20,22 @@ body {
     background-color: var(--clr-white);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 p {
     margin: 1em 0;
     padding: 0;
     font-size: 15px;
-    color: var(--clr-medium-gray)
+    color: var(--clr-white)
 }
 
 fieldset {
+    margin: 0;
+    padding: 0;
     border: none;
     display: flex;
     justify-content: space-around;
@@ -40,8 +48,8 @@ input[type="radio"] {
     background-color: var(--clr-dark-blue);
     margin: 0;
     font: inherit;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -65,7 +73,11 @@ label {
 
 label:hover, label:active, label:focus {color: var(--clr-white);}
 
-.rating-component {
+.card {
+    width: 100%;
+    min-width: 20rem;
+    flex-direction: column;
+    max-width: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,9 +103,9 @@ label:hover, label:active, label:focus {color: var(--clr-white);}
     height: 2.7rem; 
 }
 
-.rating-component__title {
+.section-title {
     color: var(--clr-white);
-    margin: 0.5em 0;
+    margin: 1em 0;
     padding: 0;
 }
 
@@ -119,4 +131,26 @@ label:hover, label:active, label:focus {color: var(--clr-white);}
 .btn-primary:hover {
     background-color: var(--clr-white);
     color: var(--clr-primary);
+}
+
+#userRating {
+    margin-top: 2em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: var(--clr-primary);
+    background-color: var(--clr-dark-blue);
+}
+
+@media (min-width: 30rem) {
+
+    input[type="radio"] {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    fieldset {
+        padding: 0 2em;
+    }
 }
