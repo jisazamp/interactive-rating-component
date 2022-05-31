@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
 
-  <!-- Rating state start -->
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  How did we do?
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="rating-component">
+        <form>
+          <!-- Start SVG -->
+          <div>IMG</div>
+          <!-- Form title -->
+          <h2>How did we do?</h2>
+          <!-- Form description -->
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <!-- Rating select -->
+          <fieldset>
+            <input type="radio" value="1" id="1" />
+            <label for="1">1</label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+            <input type="radio" value="2" id="2" />
+            <label for="2">2</label>
 
-  1 2 3 4 5
+            <input type="radio" value="3" id="3" />
+            <label for="3">3</label>
 
-  Submit
+            <input type="radio" value="4" id="4" />
+            <label for="4">4</label>
 
-  <!-- Rating state end -->
+            <input type="radio" value="5" id="5" />
+            <label for="5">5</label>
+          </fieldset>
+          <!-- Submit button  -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Juan P. Isaza</a>.
+    </div>
+  </body>
 </html>
