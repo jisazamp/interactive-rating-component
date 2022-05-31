@@ -40,10 +40,30 @@ input[type="radio"] {
     background-color: var(--clr-dark-blue);
     margin: 0;
     font: inherit;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
+    cursor: pointer;
 }
+
+input[type="radio"]:hover {
+    background-color: var(--clr-light-gray);
+}
+
+input[type="radio"]:checked {
+    background-color: var(--clr-primary)
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+label:hover, label:active, label:focus {color: var(--clr-white);}
 
 .rating-component {
     display: flex;
@@ -54,6 +74,10 @@ input[type="radio"] {
     margin: 2em;
     border-radius: 1em;
     border: none;
+}
+
+.form-group {
+    position: relative;
 }
 
 .rating-component__start-container {
@@ -74,16 +98,25 @@ input[type="radio"] {
 }
 
 .btn {
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 1em;
     font-family: inherit;
     text-transform: uppercase;
-    background-color: var(--clr-primary);
-    outline: none;
-    border: none;
     border-radius: 5em;
     width: 100%;
     font-size: 15px;
     color: var(--clr-white);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary);
+    outline: none;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
 }
