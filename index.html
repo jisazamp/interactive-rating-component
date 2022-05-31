@@ -32,9 +32,11 @@
       <section class="rating-component">
         <form>
           <!-- Start SVG -->
-          <div>IMG</div>
+          <span class="rating-component__start-container">
+            <img src="images/icon-star.svg" />
+          </span>
           <!-- Form title -->
-          <h2>How did we do?</h2>
+          <h2 class="rating-component__title">How did we do?</h2>
           <!-- Form description -->
           <p>
             Please let us know how we did with your support request. All
@@ -42,23 +44,24 @@
           </p>
           <!-- Rating select -->
           <fieldset>
-            <input type="radio" value="1" id="1" />
+            <input name="rating" type="radio" value="1" id="1" />
             <label for="1">1</label>
 
-            <input type="radio" value="2" id="2" />
+            <input name="rating" type="radio" value="2" id="2" />
             <label for="2">2</label>
 
-            <input type="radio" value="3" id="3" />
+            <input name="rating" type="radio" value="3" id="3" />
             <label for="3">3</label>
 
-            <input type="radio" value="4" id="4" />
+            <input name="rating" type="radio" value="4" id="4" />
             <label for="4">4</label>
 
-            <input type="radio" value="5" id="5" />
+            <input name="rating" type="radio" value="5" id="5" />
             <label for="5">5</label>
           </fieldset>
+
           <!-- Submit button  -->
-          <button type="submit">Submit</button>
+          <button class="btn btn-primary" type="submit">Submit</button>
         </form>
       </section>
     </main>
