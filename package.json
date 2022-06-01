@@ -1,8 +1,8 @@
 {
   "name": "interactive-rating-component",
   "version": "0.1.0",
-  "private": true,
-  "homapage": "https://jisazamp.github.io",
+  "private": false,
+  "homapage": "https://jisazamp.github.io/interactive-rating-component/",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
